@@ -22,7 +22,7 @@
 	<ui:outputText value="{!v.simpleRecord.Name}" /> 
 	<ui:outputText value="{!v.simpleRecord.Industry}" /> 
 	<ui:outputTextArea value="{!v.simpleReocrd.Description}" />
-	<ui:outputPhone value="{!v.simpleRecord.Phone} />
+	<ui:outputPhone value="{!v.simpleRecord.Phone}" />
 </div>
 
 
