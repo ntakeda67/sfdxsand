@@ -1,7 +1,7 @@
 <aura:component implements="flexipage:availableForRecordHome, force:hasRecordId">
-	<aura:attribute name="accountRecord" type="Object" />
-	<aura:attribute name="simpleRecord" type="Account" />
-	<aura:atrribute name="recordError" type="String" />
+	<aura:attribute name="accountRecord" type="Object" description="f"/>
+	<aura:attribute name="simpleRecord" type="Account" description="g"/>
+	<aura:atrribute name="recordError" type="String" description="h"/>
 	
 	<force:recordData aura:id="accountRecord"
 		layoutType="FULL"
