@@ -1,3 +1,27 @@
-<aura:component>
-
+<aura:component implements="force:hasRecordId">
+	<aura:attribute name="accountRecord" type="Account" />
+	<aura:attribute name="simpleRecord" type="Account" />
+	<aura:atrribute name="recordError" type="String" />
+	<force:recordData aura:id="record"
+		layoutType="FULL"
+		recordId="{!v.recordId}"
+		targetError="{!v.recordError}"
+		targetFields="{!v.simpleRecord}"
+		mode="VIEW" />
 </aura:component>	
+
+<aura:if isTrue="{!not(empty(v.recordError))}">
+    <div class="recordError">
+        <ui:message title="Error" severity="error" closable="true">
+            {!v.recordError}
+        </ui:message>
+    </div>
+</aura:if>
+
+
+<div class="slds-page-header" role="banner">
+	<ui:outputText value="{!v.simpleRecord.Name}" /> 
+	<ui:outputText value="{!v.simpleRecord.Industry}" /> 
+	<ui:outputTextArea value="{!v.simpleReocrd.Description}" />
+	<ui:outputPhone value="{!v.simpleRecord.Phone}
+</div>
