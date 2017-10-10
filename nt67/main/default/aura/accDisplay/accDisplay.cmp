@@ -2,10 +2,12 @@
 	<aura:attribute name="accountRecord" type="Account" />
 	<aura:attribute name="simpleRecord" type="Account" />
 	<aura:atrribute name="recordError" type="String" />
+	
 	<force:recordData aura:id="accountRecord"
 		layoutType="FULL"
 		recordId="{!v.recordId}"
 		targetError="{!v.recordError}"
+		targetRecord={!v.accountRecord}
 		targetFields="{!v.simpleRecord}"
 		mode="VIEW" />
 
