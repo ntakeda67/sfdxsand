@@ -8,7 +8,6 @@
 		targetError="{!v.recordError}"
 		targetFields="{!v.simpleRecord}"
 		mode="VIEW" />
-</aura:component>	
 
 <aura:if isTrue="{!not(empty(v.recordError))}">
     <div class="recordError">
@@ -25,3 +24,7 @@
 	<ui:outputTextArea value="{!v.simpleReocrd.Description}" />
 	<ui:outputPhone value="{!v.simpleRecord.Phone}
 </div>
+
+
+</aura:component>	
+
