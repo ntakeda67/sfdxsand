@@ -2,7 +2,7 @@
 	<aura:attribute name="accountRecord" type="Account" />
 	<aura:attribute name="simpleRecord" type="Account" />
 	<aura:atrribute name="recordError" type="String" />
-	<force:recordData aura:id="record"
+	<force:recordData aura:id="accountRecord"
 		layoutType="FULL"
 		recordId="{!v.recordId}"
 		targetError="{!v.recordError}"
