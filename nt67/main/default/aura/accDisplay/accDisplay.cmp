@@ -7,7 +7,7 @@
 		layoutType="FULL"
 		recordId="{!v.recordId}"
 		targetError="{!v.recordError}"
-		targetRecord={!v.accountRecord}
+		targetRecord="{!v.accountRecord}"
 		targetFields="{!v.simpleRecord}"
 		mode="VIEW" />
 
