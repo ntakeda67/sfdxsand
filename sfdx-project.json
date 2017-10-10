@@ -1,0 +1,11 @@
+{
+  "packageDirectories": [
+    {
+      "path": "nt67",
+      "default": true
+    }
+  ],
+  "namespace": "",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "40.0"
+}
